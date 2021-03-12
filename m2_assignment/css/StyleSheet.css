@@ -1,2 +1,121 @@
-﻿body {
+﻿/********** Base styles **********/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #EAECEE;   
+    
+}
+
+section {
+    margin-right: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+p {
+    padding-left: 5%;
+    padding-right: 5%;
+    clear: right;
+    border-radius: 25px 0px 25px;
+    background-color: #95A5A6;
+    font-family: 'Comic Sans MS', Arial, sans-serif;
+}
+
+h1 {
+    margin-top: 30px;
+    text-align: center;
+    color: #154360;
+    font-family: 'Comic Sans MS', Arial, sans-serif;
+    font-size: 300%;
+    margin-bottom: 30px;
+    font-family: 'Comic Sans MS', Arial, sans-serif;
+}
+
+#section_title {
+    border-radius: 0px 0px 0px 25px;
+    border: 1px solid black;
+    font-family: 'Comic Sans MS', Arial, sans-serif;
+    color: #17202A;
+    font-size: 100%;
+    font-weight: bold;
+    width: 30%;
+    position: relative;
+    top: 0px;
+    left: 70%;
+    text-align: center;
+}
+
+.t1 {
+    background-color: #F2D7D5;
+}
+
+.t2 {
+    background-color: #CD6155;
+}
+
+.t3 {
+    background-color: #F9E79F;
+    margin-right: 0;
+}
+
+
+/* Simple Responsive Framework. */
+.row {
+    width: 100%;
+    padding: 10px;
+    margin-top: 50px;  
+}
+
+/********** Desktop Version **********/
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+        border-radius: 25px 0px 25px;
+        border: 1px solid black;
+        /*padding: 1%;*/
+        background-color: #95A5A6;
+    }
+
+    .col-lg-4 {
+        width: 32.83%;
+    }
+}
+
+/********** Tablet version **********/
+@media (min-width: 768px) and (max-width: 991px) {
+     .col-md-6, .col-md-12 {
+        float: left;
+        border-radius: 25px 0px 25px;
+        border: 1px solid black;
+        /*padding: 1%;*/
+        background-color: #95A5A6;
+    }
+
+    #text {
+        height: 185px;
+        vertical-align: middle;
+    }
+
+    .col-md-6 {
+        width: 49.5%;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+/********** Mobile version **********/
+@media (max-width: 767px) {
+     .col-sm-12 {
+        float: left;
+        border-radius: 25px 0px 25px;
+        border: 1px solid black;
+        /*padding: 1%;*/
+        background-color: #95A5A6;
+    }
+
+    .col-sm-12 {
+        width: 100%;
+    }
 }
