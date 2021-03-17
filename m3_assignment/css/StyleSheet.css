@@ -1,58 +1,180 @@
-﻿body {
-    
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+body {
+    background: #d9d9d9;
+    width: 100%;
+}
 
 /** HEADER **/
 #header-nav {
-    background-color: #f6b319;
+    background: #d9d9d9;
     border-radius: 0;
     border: 0;
+    height: 70px;
 }
-
 .navbar-brand {
     padding-top: 25px;
+    padding-bottom: 25px;
 }
-
     .navbar-brand h1 { /* Restaurant name */
-        font-family: serif;
-        color: #557c3e;
-        font-size: 1.5em;
-        text-transform: uppercase;
+        font-family: 'Comic Sans MS',sans-serif;
+        color: black;
+        font-size: 2em;
         font-weight: bold;
-        text-shadow: 1px 1px 1px #222;
+        text-shadow: 2px 2px 2px #ffffff;
         margin-top: 0;
         margin-bottom: 0;
+        padding-left:15px;
         line-height: .75;
     }
-
     .navbar-brand a:hover, .navbar-brand a:focus {
         text-decoration: none;
     }
-
 #nav-list {
     margin-top: 10px;
 }
-
     #nav-list a {
-        color: #951C49;
+        color: black;
+        background-color: #f6b319;
         text-align: center;
     }
-
         #nav-list a:hover {
-            background: #E7E7E7;
+            background: #f2f2f2;
         }
-
         #nav-list a span {
             font-size: 1.8em;
         }
-
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-    border: 1px solid #61122f;
+    border: 1px solid black;
 }
-
 .navbar-header button.navbar-toggle {
     clear: both;
     margin-top: -30px;
 }
 /* END HEADER */
+
+/* MAIN CONTENT */
+.container {
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+}
+    .container .jumbotron {
+        background: #d9d9d9;
+        border-radius: 0;
+        border: 0;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0;
+        width: 100%;
+        padding-right: auto;
+        padding-left: auto;
+    }
+
+#section_title {
+    font-family: 'Comic Sans MS',sans-serif;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #ffffff;
+    position: relative;
+    text-align: center;
+}
+
+.row {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px;
+    position:relative;
+}
+
+.row section {
+    border: 1px solid black;
+    margin-right: 2%;
+    margin-bottom: 10px;
+    width: 100%;
+}
+h1.content-title {
+    font-family: 'Comic Sans MS',sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.jumbotron{
+    margin: 0;
+}
+
+p {
+    padding: 5px;
+    background-color: #95A5A6;
+    font-family: 'Comic Sans MS', Arial, sans-serif;
+}
+
+section #section_title {
+    margin-right: auto;
+    margin-left: auto;
+}
+/* END CONTENT */
+
+/********** Desktop Version **********/
+@media (min-width:992px) {
+    .row .col-md-4 {
+        float: left;
+        border: 1px solid black;
+        background-color: #95A5A6;
+        width: 32%;
+    }
+
+    .row .t3 {
+        margin-right: 0;
+    }
+
+    section{
+        height: 290px;
+    }
+}
+
+/********** Tablet Version **********/
+@media (min-width:768px) and (max-width:991px) {
+    .row .col-sm-6 {
+        float: left;
+        border: 1px solid black;
+        background-color: #95A5A6;
+        width: 49%;
+    }
+
+    .row .col-sm-12 {
+        float: left;
+        border: 1px solid black;
+        background-color: #95A5A6;
+        width: 100%;
+    }
+
+    .row .t3,.row .t2 {
+        margin-right: 0;
+    }
+
+    section {
+        height: 260px;
+    }
+}
+
+/********** Mobile Version **********/
+@media (max-width:767px) {
+    .row .col-xs-12 {
+        float: left;
+        border: 1px solid black;
+        background-color: #95A5A6;
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+
