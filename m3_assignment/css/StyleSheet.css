@@ -14,7 +14,7 @@ body {
     background: #d9d9d9;
     border-radius: 0;
     border: 0;
-    height: 70px;
+   /* height: 70px;*/
 }
 .navbar-brand {
     padding-top: 25px;
@@ -39,7 +39,7 @@ body {
 }
     #nav-list a {
         color: black;
-        background-color: #f6b319;
+        background-color: #d9d9d9;
         text-align: center;
     }
         #nav-list a:hover {
@@ -58,11 +58,6 @@ body {
 /* END HEADER */
 
 /* MAIN CONTENT */
-.container {
-    margin: 0;
-    width: 100%;
-    padding: 10px;
-}
     .container .jumbotron {
         background: #d9d9d9;
         border-radius: 0;
@@ -71,6 +66,8 @@ body {
         margin-left: auto;
         padding: 0;
         width: 100%;
+        margin: 0;
+        padding: 10px;
     }
 
 #section_title {
@@ -173,6 +170,8 @@ section #section_title {
         width: 100%;
         margin-right: 0;
     }
+/*    .container .jumbotron  {
+        margin-top: 80px;
+        padding: 0;
+    }*/
 }
-
-
