@@ -5,14 +5,59 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Module 3 Assignment</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css\StyleSheet.css">
 </head>
 <body>
-    <h1>Our Menu</h1>
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="index.html" class="pull-left visible-xs">
+                        <div id="logo-img"></div>
+                    </a>
+
+                    <div class="navbar-brand">
+                        <a href="index.html"><h1>Food, LLC</h1></a>
+                    </div>
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div id="collapsable-nav" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="index.html">
+                                Chicken
+                            </a>
+                        </li>
+                        <li>
+                            <a href="menu-categories.html">
+                                Beef
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                Sushi
+                            </a>
+                        </li>
+                    </ul><!-- #nav-list -->
+                </div><!-- .collapse .navbar-collapse -->
+            </div><!-- .container -->
+        </nav><!-- #header-nav -->
+    </header>
+
+
+    <!--<h1>Our Menu</h1>
     <div class="row">
         <section class="col-lg-4 col-md-6 col-sm-12">
             <p id="section_title" class="t1">Meat</p>
-            <p id="text">Nunc ut ultricies elit, non mattis est. Sed a massa at justo maximus sagittis. Vestibulum porta leo urna. Sed porttitor nisi vitae convallis consequat. Curabitur rhoncus, odio ut maximus porttitor, enim ipsum sagittis diam, ac rhoncus turpis orci in nisl.</p>
+            <p id="text">Nunc ut ultricies elit, non mattis est. Sed a massa at justo maximus sagittis. Vestibulum porta leo urna. Sed porttitor nisi vitae convallis consequat.</p>
         </section>
         <section class="col-lg-4 col-md-6 col-sm-12">
             <p id="section_title" class="t2">Fish</p>
@@ -22,6 +67,6 @@
             <p id="section_title" class="t3">Dessert</p>
             <p id="text"> Sed a massa at justo maximus sagittis. Curabitur rhoncus, odio ut maximus porttitor, enim ipsum sagittis diam, ac rhoncus turpis orci in nisl.</p>
         </section>
-    </div>
+    </div>-->
 </body>
 </html>
